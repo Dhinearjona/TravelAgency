@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --yellow: #E3C03D;
+    --green: #459920;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(img/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {    
+    width: 400px;
+    min-height: 400px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+
+    .logo-image {
+        width: 10rem;
+        margin: 0 5.5rem;
+    }
+
+    .login-text {
+        color: var(--green);
+        font-weight: 500;
+        font-size: 1.1rem;
+        text-align: center;
+        margin-bottom: 20px;
+        display: block;
+        text-transform: capitalize;
+    }
+
+    .input-group {
+
+        input {
+            width: 20rem;
+            padding: 1rem 1rem;
+            border-radius: 50px;
+            margin: .1rem;
+            border: 1px solid var(--green);
+        }
+
+        input:focus {
+            border: 1px solid var(--black);
+        }
+
+        button {
+            color: var(--white);
+            padding: .5rem 9rem;
+            border-radius: 50px;
+            margin: 1rem 0;
+            border: none;
+            background-color: var(--green);
+            transition: all .5s ease;
+            cursor: pointer;
+        }
+    }
+
+    a {
+        color: var(--green);
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--black);
+    }
+}
